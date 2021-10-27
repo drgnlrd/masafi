@@ -26,12 +26,15 @@ import {
     Textarea,
 
   } from '@chakra-ui/react';
+  import { AttentionSeeker } from 'react-awesome-reveal'
 
   import { FaPhone, FaEnvelope, FaInstagram, FaWhatsapp, FaFacebook } from 'react-icons/fa'
 
+  import {Zoom} from 'react-awesome-reveal'
   export default function Form() {
     return (
         <Box maxW={'100vw'} px={{base: '0', md: '20'}} pt={{base: '10', md: '0'}} pb={'20'} alignItems={'center'}>
+            <Zoom >
             <Box maxW={{base: '90vw', md: '80vw'}} minH='400px' backgroundImage={'/images/contact_background.png'} backgroundPosition={'center top'} backgroundSize={'cover'} backgroundRepeat={'no-repeat'} p={{base: '3', md: '12'}} borderRadius={'xl'} shadow={'dark-lg'} >
                 <Flex color="white" m={{base: '3', md: '0'}} direction={{base: 'column', md: 'row'}} justifyContent={{base:'flex-start',md: 'center'}}>
                     <Box>
@@ -52,6 +55,7 @@ import {
                         </Stack>
 
                         <Stack mt={'10'} direction={'row'} >
+                            <AttentionSeeker delay={500} effect='headShake' cascade >
                             <Button 
                                 justifyContent={'flex-start'} 
                                 alignItems={'center'} 
@@ -122,6 +126,7 @@ import {
                             >
                                 <Icon as={FaInstagram} w={5} h={5}  />
                             </Button>
+                            </AttentionSeeker>
                         </Stack>
                     </Box>  
                     <Box>
@@ -192,6 +197,7 @@ import {
                     </Box>     
                 </Flex>
             </Box>
+            </Zoom>
         </Box>
     );
   }

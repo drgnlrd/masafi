@@ -92,7 +92,7 @@ import {
         </Flex>
   
         <Collapse in={isOpen} animateOpacity>
-          <MobileNav />
+          <MobileNav closeNav={onToggle} />
         </Collapse>
       </Box>
     );
@@ -188,20 +188,20 @@ import {
     );
   };
   
-  const MobileNav = () => {
+  const MobileNav = ({closeNav}) => {
     return (
       <Stack
         bg={'blue.500'}
         p={4}
         display={{ md: 'none' }}>
         {NAV_ITEMS.map((navItem) => (
-          <MobileNavItem key={navItem.label} {...navItem} />
+          <MobileNavItem closeNav={closeNav} key={navItem.label} {...navItem} />
         ))}
       </Stack>
     );
   };
   
-  const MobileNavItem = ({ label, children, href }) => {
+  const MobileNavItem = ({ label, children, href, closeNav }) => {
     const { isOpen, onToggle } = useDisclosure();
   
     return (
@@ -209,7 +209,11 @@ import {
         <Flex
           py={2}
           as={Link}
-          href={href ?? '#'}
+          to={href}
+          offset={-300}
+          smooth={true}
+          duration={500}
+          onClick={closeNav}
           justify={'space-between'}
           align={'center'}
           _hover={{
