@@ -153,7 +153,10 @@ import {
     return (
       <ChakraLink
         as={Link}
-        to={navItem.href}
+        to={href}
+        smooth={true}
+        offset={-70}
+        duration={500}
         href={href}
         role={'group'}
         display={'block'}
@@ -239,7 +242,7 @@ import {
             align={'start'}>
             {children &&
               children.map((child) => (
-                <ChakraLink as={Link} key={child.label} color={'white'} py={2} href={child.href}>
+                <ChakraLink as={Link} to={child.href} key={child.label} color={'white'} py={2} href={child.href}>
                   {child.label}
                 </ChakraLink>
               ))}
