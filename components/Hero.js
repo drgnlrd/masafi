@@ -31,7 +31,6 @@ import { Fade } from 'react-awesome-reveal';
                 color={'blue.500'}
                 _hover={{
                   bg: 'yellow.600',
-                  color: 'blue.300'
                 }}
                 py={'6'}
                 zIndex={'1 !important'}>

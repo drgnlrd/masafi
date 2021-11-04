@@ -100,7 +100,7 @@ import {
   
   const DesktopNav = () => {
     const linkColor = 'white';
-    const linkHoverColor = 'yellow.400';
+    const linkHoverColor = 'yellow.500';
     const popoverContentBgColor = 'blue.400';
   
     return (
@@ -167,7 +167,7 @@ import {
           <Box>
             <Text
               transition={'all .3s ease'}
-              _groupHover={{ color: 'yellow.400' }}
+              _groupHover={{ color: 'yellow.500' }}
               fontWeight={500}>
               {label}
             </Text>
@@ -181,7 +181,7 @@ import {
             justify={'flex-end'}
             align={'center'}
             flex={1}>
-            <Icon color={'yellow.400'} w={5} h={5} as={ChevronRightIcon} />
+            <Icon color={'yellow.500'} w={5} h={5} as={ChevronRightIcon} />
           </Flex>
         </Stack>
       </ChakraLink>

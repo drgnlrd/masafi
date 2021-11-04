@@ -25,7 +25,7 @@ import {
   export default function Products() {
       
     return(
-        <Box p={'10'} w={'100%'} maxW={'100vw'} minH={'80vh'} backgroundColor={'yellow.300'} id="products" >
+        <Box p={'10'} w={'100%'} maxW={'100vw'} minH={'80vh'} backgroundColor={'yellow.500'} id="products" >
             <Fade direction='down' >
                 <Heading color={'blue.500'} textAlign={'center'} fontSize={{ base: '2xl', md: '3xl', lg: '3xl' }} >
                     Our Creations

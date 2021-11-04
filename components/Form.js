@@ -38,17 +38,17 @@ import {
             <Box maxW={{base: '90vw', md: '80vw'}} minH='400px' backgroundImage={'/images/contact_background.png'} backgroundPosition={'center top'} backgroundSize={'cover'} backgroundRepeat={'no-repeat'} p={{base: '3', md: '12'}} borderRadius={'xl'} shadow={'dark-lg'} >
                 <Flex color="white" m={{base: '3', md: '0'}} direction={{base: 'column', md: 'row'}} justifyContent={{base:'flex-start',md: 'center'}}>
                     <Box>
-                        <Heading color={'yellow'} >Contact Us</Heading>
+                        <Heading color={'yellow.500'} >Contact Us</Heading>
                         <Text fontSize={{base: 'sm', md: 'md'}} mt={'4'} maxW={'80%'} >You can contact us for Product Availblity, Prices, Inquiry, or if you have any querries. You can use the following options or fill the given form.</Text>
 
                         <Stack direction={'column'} mt={'5'} >
                             <Flex>
-                                <Icon color={'yellow.400'} mr={'3'} w={6} h={6} as={FaPhone} />
+                                <Icon color={'yellow.500'} mr={'3'} w={6} h={6} as={FaPhone} />
                                 <Text fontSize={'18'} fontWeight={'bold'} >+91 98690 59471</Text>
                             </Flex>
                             
                             <Flex>
-                                <Icon color={'yellow.400'} mr={'3'} w={6} h={6} as={FaEnvelope} />
+                                <Icon color={'yellow.500'} mr={'3'} w={6} h={6} as={FaEnvelope} />
                                 <Text fontSize={'18'} fontWeight={'bold'} >example@email.com</Text>
                             </Flex>
                             
@@ -187,7 +187,7 @@ import {
                             <FormControl id="name" float="right">
                                 <Button
                                 variant="solid"
-                                bg={'yellow.400'}
+                                bg={'yellow.500'}
                                 color="blue.500"
                                 _hover={{}}>
                                 Send Message
